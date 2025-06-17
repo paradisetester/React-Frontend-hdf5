@@ -1,0 +1,55 @@
+.source-visualizer-container {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.source-label {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  user-select: none;
+  pointer-events: none;
+  text-align: center;
+  min-width: 20px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.source-label.selected {
+  background-color: rgba(255, 149, 0, 0.8);
+  box-shadow: 0 0 5px rgba(255, 149, 0, 0.5);
+}
+
+.source-label.random-mode {
+  background-color: rgba(155, 89, 182, 0.8);
+  box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
+}
+
+/* .visualizer-instructions {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.instruction-icon {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.visualizer-instructions p {
+  margin: 3px 0;
+}  */

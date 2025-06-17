@@ -1,0 +1,287 @@
+.mesh-comparison {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mesh-comparison h2 {
+  font-size: 1.8rem;
+  color: #1a365d;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.layout-controls {
+  display: flex;
+  align-items: center;
+}
+
+.layout-controls label {
+  margin-right: 10px;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.toggle-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.toggle-button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e0;
+  background-color: white;
+  color: #4a5568;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggle-button.active {
+  background-color: #3182ce;
+  color: white;
+  border-color: #2c5282;
+}
+
+.toggle-button:hover:not(.active) {
+  background-color: #edf2f7;
+}
+
+.view-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.option-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.option-toggle input {
+  margin-right: 8px;
+}
+
+.product-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.product-tab {
+  padding: 8px 16px;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid #e2e8f0;
+  border-bottom-width: 3px;
+  background-color: white;
+  color: #4a5568;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.product-tab.active {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.product-tab:hover:not(.active) {
+  background-color: #f7fafc;
+}
+
+.mesh-container {
+  position: relative;
+  height: 600px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.single-mesh-view {
+  width: 100%;
+  height: 100%;
+}
+
+.mesh-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.mesh-view {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.mesh-view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #edf2f7;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.view-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.error-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #feb2b2;
+  color: #c53030;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.mesh-canvas-container {
+  flex: 1;
+  width: 100%;
+  height: 0;
+  min-height: 200px;
+}
+
+.mesh-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #a0aec0;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.legend {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+}
+
+.legend h3 {
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  background-color: #f7fafc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #2d3748;
+}
+
+.color-box {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+.legend-label {
+  margin-right: 6px;
+}
+
+.no-mesh-badge {
+  margin-left: 6px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #e2e8f0;
+  color: #718096;
+  font-size: 0.75rem;
+}
+
+/* Loading, Error, Empty States */
+.mesh-comparison-loading,
+.mesh-comparison-error,
+.mesh-comparison-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #3182ce;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-icon {
+  font-size: 2rem;
+  color: #e53e3e;
+  margin-bottom: 15px;
+}
+
+.retry-button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.mesh-comparison-empty p {
+  color: #4a5568;
+  font-size: 1.1rem;
+} 
