@@ -6,9 +6,11 @@ frontend:
         - nvm use 18
         - npm cache clean --force
         - rm -rf node_modules package-lock.json
-        - npm install --legacy-peer-deps --no-package-lock --force --verbose
+        - npm install --legacy-peer-deps --no-package-lock
+        - npm rebuild
     build:
       commands:
+        - export NODE_OPTIONS=--max_old_space_size=4096
         - npm run build
   artifacts:
     baseDirectory: build
