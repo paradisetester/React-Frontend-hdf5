@@ -3,6 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - nvm use 18
         - npm cache clean --force
         - npm install --legacy-peer-deps --no-package-lock
     build:
