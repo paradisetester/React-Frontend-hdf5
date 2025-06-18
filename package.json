@@ -25,6 +25,8 @@
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.2.0",
     "@testing-library/user-event": "13.5.0",
+    "ajv": "6.12.6",
+    "ajv-keywords": "3.5.2",
     "aws-amplify": "6.0.12",
     "axios": "1.8.1",
     "jsonfile": "6.1.0",
@@ -34,6 +36,7 @@
     "react-plotly.js": "2.6.0",
     "react-scripts": "5.0.1",
     "recharts": "2.15.1",
+    "schema-utils": "3.1.2",
     "three": "0.159.0",
     "universalify": "2.0.1",
     "web-vitals": "2.1.4"
@@ -71,20 +74,9 @@
     "tsx": "4.20.3",
     "typescript": "4.9.5"
   },
-  "resolutions": {
-    "@smithy/protocol-http": "2.0.12",
-    "@smithy/util-base64": "2.0.0",
-    "@smithy/util-body-length-browser": "2.0.0",
-    "@smithy/util-utf8": "2.0.0",
-    "@smithy/abort-controller": "2.0.16",
-    "@smithy/querystring-builder": "2.0.16",
-    "@smithy/util-uri-escape": "2.0.0",
-    "@smithy/querystring-parser": "2.0.16",
-    "@smithy/util-buffer-from": "2.0.0",
-    "@smithy/is-array-buffer": "2.0.0",
-    "@smithy/service-error-classification": "2.0.9",
-    "@smithy/fetch-http-handler": "2.3.0",
-    "@smithy/util-hex-encoding": "2.0.0",
-    "ajv": "6.12.6"
+  "overrides": {
+    "ajv": "6.12.6",
+    "ajv-keywords": "3.5.2",
+    "schema-utils": "3.1.2"
   }
 }
