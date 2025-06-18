@@ -6,7 +6,7 @@ frontend:
         - nvm use 18
         - npm cache clean --force
         - rm -rf node_modules package-lock.json
-        - npm install --legacy-peer-deps --no-package-lock --force
+        - npm install --legacy-peer-deps --no-package-lock --force --verbose
     build:
       commands:
         - npm run build
