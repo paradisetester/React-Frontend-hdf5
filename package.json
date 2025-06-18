@@ -84,6 +84,7 @@
     "@smithy/is-array-buffer": "2.0.0",
     "@smithy/service-error-classification": "2.0.9",
     "@smithy/fetch-http-handler": "2.3.0",
-    "@smithy/util-hex-encoding": "2.0.0"
+    "@smithy/util-hex-encoding": "2.0.0",
+    "ajv": "6.12.6"
   }
 }
